@@ -12,13 +12,13 @@
         
         Exemplo: */
        h1 {
-        color: purple;
+        color: red;
        } 
 
        h2 {
-        color: red;
+        color: purple;
         text-transform: uppercase;
-        background-color: lightgrey; 
+        background-color: lightblue; 
 
        }
 
@@ -48,6 +48,16 @@
 
        }
 
+       /* Regra CSS
+       Usando seletor ID (identificado) */
+
+       #listas {
+        background-color: lightgoldenrodyellow;
+        box-shadow: black 1px 1px 3px;
+        padding: 8px;
+
+       }
+
     </style>
 
 </head>
@@ -63,23 +73,24 @@
     
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel error saepe ab adipisci soluta praesentium corporis similique fugit.</p>
 
-    <h2>Não-ordenada</h2>
+    <div id="listas">
+        <h2 class="centralizar">Não-ordenada</h2>
 
-        <ul>
-            <li>Limão</li>
-            <li>Açucar</li>
-            <li>feijão</li>
-        </ul>
+            <ul>
+                <li>Limão</li>
+                <li>Açucar</li>
+                <li>feijão</li>
+            </ul>
 
-    <h2>Ordenada</h2>
+        <h2 class="centralizar">Ordenada</h2>
 
-        <ol>
-            <li>Ligar</li>
-            <li>Digitar usúario e senha</li>
-            <li>Aguardar o sistema carregar</li>
-            <li>Procurar o app desejado</li>
-        </ol>
-
+            <ol>
+                <li>Ligar</li>
+                <li>Digitar usúario e senha</li>
+                <li>Aguardar o sistema carregar</li>
+                <li>Procurar o app desejado</li>
+            </ol>
+    </div>
     
 
     <!-- Significado das tags
