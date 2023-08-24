@@ -14,3 +14,4 @@ CSS é uma sigla que significa "Folhas de EStilo em Cascata", e possui 3 formas 
 
 O CSS é aplicado diretamente em cada tag HTML.
 
+### Interna ou OnPage (na página)
