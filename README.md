@@ -1,2 +1,5 @@
 # aulas-front-end
- Atividades de estudos de Front-end (SENAC)
+
+## HTML
+
+Linguangem para estruturação de cpnteúdo em páginas web.
