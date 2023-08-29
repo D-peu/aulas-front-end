@@ -1,6 +1,13 @@
 /* Neste arquivo, faremos TODAS as REGRAS 
 CSS necessárias para a formatação do site. */
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../imagens/watercolor.png);
+    
+}
+
 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: red;
 }
