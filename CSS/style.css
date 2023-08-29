@@ -72,7 +72,18 @@ h3, p, figcaption {
 
 .destaque {
     background-color: black;
-    padding: 3px;
+    padding: 1px;
     color: white;
     border-radius: 4px;
+}
+
+/* Reset/Limpeza */
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
 }
