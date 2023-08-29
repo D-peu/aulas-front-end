@@ -29,12 +29,6 @@ h1 {
     - letras maiusculas  */
 }
 
-a {
-    color: black;
-    text-decoration: none;
-    margin-left: 10px;
-}
-
 h2{
     font-size: 20px;
     border-bottom: solid 5px;
@@ -86,4 +80,10 @@ figure {
 
 img {
     max-width: 100%;
+}
+
+/* Seletor descendente */
+
+p a {
+    color: #eb6e83;
 }
