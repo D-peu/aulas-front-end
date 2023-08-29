@@ -20,6 +20,12 @@ O CSS é criado usando regras (com seletores, propriedades e valores) dentro da 
 
 As regras vão valer para todas as tags/elementos desta página.
 
+### Externa 
+
+Arquivo CSS dedicado a elaboração de regras CSS.
+
+Este arquivo será "conectado" a cada página HTML do seu site, permitindo assim centralizar toda a estilização de um projeto.
+
 ---
 
 ### Sobre seletores 
