@@ -3,8 +3,8 @@ CSS necessárias para a formatação do site. */
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(../imagens/watercolor.png);
-    
+    background-image: url(../imagens/oriental-tiles.png);
+    background-attachment: fixed;
 }
 
 h1 {
@@ -39,8 +39,8 @@ h2{
 h3 {
     background: linear-gradient(
         to right, 
-        #eb6e83, 
-        #ffc0cb
+        #25245c, 
+        #ddcd6faf
     );
 
     display: inline-block;
