@@ -141,11 +141,21 @@ nav a:last-child {
     border-bottom-right-radius: 14px;
 }
 
-/* Regra para o estado do link acionado */
-nav a:hover {
+/* Regra para o estado do link acionado
+Pseudo-classe :hover (passar o mouse)
+Pseudo-classe :focus (receber foco) */
+nav a:hover, nav a:focus {
     color: #332916;
     background: linear-gradient(
         #9E8146,
         #786135
     )
+}
+
+figure img {
+    filter: grayscale();
+}
+
+figure img:hover {
+    filter:none;
 }
