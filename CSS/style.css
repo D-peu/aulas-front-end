@@ -19,8 +19,9 @@ h1 {
     margin: auto; 
     border: solid 2px #51658F;
     box-shadow: #51658F inset 3px 3px 5px;
-    
-    
+
+    animation-name: caindo;
+    animation-duration: 1.5s;
 
     /* Desafio: aplique as seguintes propriedades:
     - borda em todos os lados na cor que quiser 
@@ -153,9 +154,30 @@ nav a:hover, nav a:focus {
 }
 
 figure img {
-    filter: grayscale();
+    filter: grayscale(50%);
+    transition: 2s;
+    /* clip-path: circle(50% at 50% 50%); */
+
+    transform: scale(0.8);
 }
 
 figure img:hover {
     filter:none;
+    /* clip-path: circle(71.6% at 50% 49%); */
+    transform: scale(1) /*rotate(360)*/;
+}
+
+/* Regras de animação */
+
+@keyframes caindo {
+    /* Como começa: */
+    from {
+        transform: translatey(-100px);
+        opacity: 50%;
+    }
+
+    /* Como termina: */
+    to {
+        transform: translatey(0);
+    }
 }
