@@ -44,3 +44,10 @@ Classes podem ser reutilizadas na mesma página e combinadas com outras classes.
 
 Regras criadas com seletor do tipo id, são mais versáteis, ou seja, você desenvolvedor determina onde aplicar o id e sua formatação. **ATENÇÂO** você não pode reaproveitar IDs, ou seja, seletor ID deve ser usado SOMENTE PARA UM ELEMENTO por página.
 
+### Grupo de Seletores
+
+Regra composta por outros seletores, útil quando objetivo é aplicar uma mesma formatação em diversos elementos diferentes.
+
+### Descendente 
+
+Regra para formatação de elementos que estão dentro de outros elementos, permitindo assim um grau maior de precisão ou especificidade.
