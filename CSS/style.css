@@ -115,11 +115,37 @@ nav a {
     font-weight: bold;
     color: black;
     display: inline-block;
+
+    /* Alterando o Box Model fazendo com que o padding e o border não dê B.O nas dimensões finais do elemento */
+    box-sizing: border-box;
+
     width: 50%;
+    padding: 10px;
+    
+    border: solid 1px;
     background: linear-gradient(
         #786135,
         #9E8146
     );
 }
 
+/* Seletor pseudo-classe :first-child */
+nav a:first-child {
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+/* Seletor pseudo-classe :last-child */
+nav a:last-child {
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
 /* Regra para o estado do link acionado */
+nav a:hover {
+    color: #332916;
+    background: linear-gradient(
+        #9E8146,
+        #786135
+    )
+}
