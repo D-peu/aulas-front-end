@@ -102,3 +102,24 @@ li {
 li::marker {
     content: "👉🏾";
 }
+
+/* Regras para o menu */
+nav{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Regra para o estado inicial do link */
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    width: 50%;
+    background: linear-gradient(
+        #786135,
+        #9E8146
+    );
+}
+
+/* Regra para o estado do link acionado */
