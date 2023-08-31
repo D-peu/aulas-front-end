@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* Neste arquivo, faremos TODAS as REGRAS 
 CSS necessárias para a formatação do site. */
 
@@ -8,7 +10,7 @@ body {
 }
 
 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     color: white;
     background-color: black;
     padding: 10px;
@@ -52,9 +54,12 @@ h3 {
 }
 
 #container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.877);
+
     width: 80%;
     max-width: 2000px;
+    min-width: 500px;
+
     margin: auto;
     box-shadow: black 0px 0px 5px;
     padding: 16px;
@@ -181,4 +186,21 @@ figure img:hover {
     to {
         transform: translatey(0);
     }
+}
+
+/* Pseudo-classes child:
+:first-child
+:last-child
+:nth-child() */
+
+li:first-child {
+    color: red;
+}
+
+li:nth-child(3) {
+    color: orange ;
+}
+
+li:last-child {
+    color: blue;
 }
