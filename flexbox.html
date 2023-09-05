@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        /* Alterando o Box Model para TODOS os elementos da página (por isso usamos o seletor asterisco) */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        article {
+            padding: 8px;
+            border: solid 1px;
+            width: 30%;
+        }
+
+        article:first-child {
+            background-color: yellow;
+        }
+
+        article:nth-child(2) {
+            background-color: blue;
+        }
+
+        article:last-child {
+            background-color: green;
+        }
+        
+        /* Flex container */
+        .cards {
+            display: flex;
+
+            /* Atenção ao usar direções do Flex pois os eixos (horizintal/vertical) vão mudar o comportamento das propriedades abaixo. O valor padrão é row (linha/horizontal). */
+            flex-direction: row; 
+
+            justify-content: space-between;
+            align-items: center; 
+
+            width: 80%;
+            height: 1000px;
+
+            margin: auto;
+            /* gap: 12px; */
+            background-color: aqua;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <hr>
+    <p>flexbox é um mecanismo CSS que permite aplicar facilmente recursos de alinhamento, espaçamento e distribuição de elementos no HTML. Muito útil na elaboração de çayouts.</p>
+
+    <div class="cards">
+
+        <article>
+            <img src="imagens/mini-apple.jpg" alt="">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nisi.</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, dicta!</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, iure!</p>
+        </article>
+        
+    </div>
+    
+</body>
+</html>
