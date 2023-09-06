@@ -21,6 +21,7 @@
             background-color: whitesmoke;
             box-shadow: black 0 0 5px;
             padding: 5px;
+            margin-top: 10px;
         }
 
         /* CSS Reset (em alguns elementos) */
@@ -73,7 +74,7 @@
             }
         }
 
-        @media screen and (min-width: 900px) {
+        @media screen and (min-width: 700px) {
             #colunaa {
                 width: 70%;
             }
@@ -93,6 +94,32 @@
                 /* Flex-wrap quando habilitado faz com que os elementos sejam "quebrados" para a linha de baixo caso não haja espaço. */
                 flex-wrap: wrap;
             }
+        }
+
+        @media screen and (min-width: 900px) {
+            .container {
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            header {
+                height: 100px;
+                align-items: center;
+            }
+
+
+
+            #colunaa, #colunab, #colunac {
+                width: 33%;
+            }
+
+            main {
+                flex-wrap: nowrap;
+                /* gap: 15px; */
+                justify-content:space-between;
+                margin: 10px 0;
+            }
+
         }
 
     </style>
