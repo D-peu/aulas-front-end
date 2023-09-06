@@ -4,36 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Responsivo</title>
+
+    <style>
+
+        /* Regras de uso geral */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: lightblue;
+        }
+
+        .container {
+            background-color: whitesmoke;
+            box-shadow: black 0 0 5px;
+            padding: 5px;
+        }
+
+        /* CSS Reset (em alguns elementos) */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            padding: 5px 0;
+        }
+
+        h1 {
+            background-color: pink;
+        }
+
+        nav {
+            background-color: yellow;
+        }
+
+        article {
+            padding: 8px;
+        }
+
+        #colunaa {background-color: orange;}
+        #colunab {background-color: purple;}
+        #colunac {background-color: green;}
+
+        footer {
+            background-color: gray;
+            height: 100px;
+        }
+
+        /* Regras condicionais (Media Queries) */
+        @media screen and (min-width: 622px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            h1 {
+                width: 40%;
+            }
+
+            nav {
+                width: 60%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            #colunaa {
+                width: 70%;
+            }
+
+            #colunab {
+                width: 30%;
+            }
+
+            #colunac {
+                width: 100%;
+            }
+
+
+            main {
+                display: flex;
+
+                /* Flex-wrap quando habilitado faz com que os elementos sejam "quebrados" para a linha de baixo caso não haja espaço. */
+                flex-wrap: wrap;
+            }
+        }
+
+    </style>
+
 </head>
 <body>
-    <header>
-        <h1>Exemplo</h1>
-        <nav>
-            <a href="">link 1</a>
-            <a href="">link 2</a>
-            <a href="">link 3</a>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Exemplo</h1>
+            <nav>
+                <a href="">link 1</a>
+                <a href="">link 2</a>
+                <a href="">link 3</a>
+            </nav>
+        </header>
 
-    <main>
-        <article>
-            <h2>Coluna A</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id voluptatum ad quasi magni dolores sint unde. Iste odio sunt amet quia placeat? Atque reiciendis aliquid repellendus distinctio et mollitia.</p>
-        </article>
+        <main>
+            <article id="colunaa">
+                <h2>Coluna A</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id voluptatum ad quasi magni dolores sint unde. Iste odio sunt amet quia placeat? Atque reiciendis aliquid repellendus distinctio et mollitia.</p>
+            </article>
 
-        <article>
-            <h2>Coluna B</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id voluptatum ad quasi magni dolores sint unde. Iste odio sunt amet quia placeat? Atque reiciendis aliquid repellendus distinctio et mollitia.</p>
-        </article>
+            <article id="colunab">
+                <h2>Coluna B</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id voluptatum ad quasi magni dolores sint unde. Iste odio sunt amet quia placeat? Atque reiciendis aliquid repellendus distinctio et mollitia.</p>
+            </article>
 
-        <article>
-            <h2>Coluna C</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id voluptatum ad quasi magni dolores sint unde. Iste odio sunt amet quia placeat? Atque reiciendis aliquid repellendus distinctio et mollitia.</p>
-        </article>
-    </main>
+            <article id="colunac">
+                <h2>Coluna C</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id voluptatum ad quasi magni dolores sint unde. Iste odio sunt amet quia placeat? Atque reiciendis aliquid repellendus distinctio et mollitia.</p>
+            </article>
+        </main>
 
-    <footer>
-
-    </footer>
+        <footer>
+            <h2>Rodapé</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, in.</p>
+        </footer>
+    </div>
 </body>
 </html>
